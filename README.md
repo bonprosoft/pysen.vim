@@ -65,3 +65,20 @@ let g:pysen_language_server_config = {
   \ 'formatTargets': ['format', 'lint'],
   \ }
 ```
+
+## FAQ
+
+### How can I work with other linter plugins?
+
+You may need to disable some linter plugins (e.g. flake8, mypy, isort, black) as they don't read `pysen` configuration.
+
+The recommended way is to disable conflicting linter plugins.
+For example, ALE users can specify a list of linters to use for each language.
+```vim
+let g:ale_linters = {
+\   'python': [],
+\}
+```
+
+You can also setup your editor's linter plugins with pysen compatible settings by configuring pysen to export configuration files.
+See [`Settings file directory` section in pysen's README](https://github.com/pfnet/pysen#how-it-works-settings-file-directory).
