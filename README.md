@@ -10,6 +10,8 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'bonprosoft/pysen.vim'
 ```
 
+Note that you also need to install [pysen-ls >= 0.1.0](https://github.com/bonprosoft/pysen-ls) in your python environment.
+
 ## Commands
 
 Use the commands `vim-lsp` provides to invoke the standard language server feature.
